@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user page</title>
+</head>
+<body>
+    <h1> გაუმარჯოს , {{ user_name }} , შენ {{ user_age }}წლის ხარ!!! შენი ასაკის გამყოფებია: </h1>
+    {% for i in range(1, age) %}
+        {% if age % i == 0 %}
+            <p>{{ i }}</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
